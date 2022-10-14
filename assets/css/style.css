@@ -1,0 +1,406 @@
+/* ============= 
+    General Style
+===============*/
+@font-face {
+    font-family: Graphik-Medium;
+    src: url("../fonts/Graphik-Medium.ttf");
+}
+
+@font-face {
+    font-family: Graphik-Regular;
+    src: url("../fonts/Graphik-Regular.woff");
+}
+
+@font-face {
+    font-family: Theinhardt;
+    src: url("../fonts/Theinhardt-Lt.woff");
+}
+
+@font-face {
+    font-family: TiemposHeadline;
+    src: url("../fonts/TiemposHeadline-Semibold.woff");
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: Theinhardt;
+    color: #3D3E41;
+}
+
+.tiempos {
+    font-family: TiemposHeadline;
+    color: #27282A;
+    font-size: 5rem;
+}
+
+.graphik-R {
+    font-family: Graphik-Regular;
+    color: #27282A;
+    font-size: 2rem;
+}
+
+.graphik-M {
+    font-family: Graphik-Mediuem;
+    color: #27282A;
+    font-size: 2rem;
+}
+
+/* 
+Farben: #2B2C2E /
+  #9FA2A7 
+   #27282A /
+     #848689 /
+      #3D3E41 / 
+      #fff
+ */
+
+/* ============= 
+    Header Style
+===============*/
+#toggle {
+    display: none;
+    position: absolute;
+}
+.hamburger {
+    position: absolute;
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 4rem;
+}
+
+.menu {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-started {
+    border: 1px solid black;
+    padding: 0.5rem 3rem;
+    border-radius: 0.2rem;
+}
+
+/* ============= 
+    Main Style
+===============*/
+.hero {
+    background-image: url("../img/home_hero.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    margin: 6rem 0;
+}
+
+.hero-heading {
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+    font-size: 4rem;
+}
+
+/* ----- Review and Price ---------*/
+.review-price {
+    width: 70%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.review {
+    font-size: 1.5rem;
+}
+
+.ctn-price {
+    width: 25%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.ctn-price p {
+    font-family: Theinhardt;
+    margin-top: 0.5rem;
+}
+
+.price {
+    font-size: 5rem;
+}
+
+.section-deliver {
+    width: 70%;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.deliver-heading {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.deliver-sub-heading {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2rem;
+
+}
+
+.deliver-p {
+    font-size: 1.5rem;
+}
+
+.section-how {
+    width: 80%;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: #d8dade;
+}
+
+.section-how img {
+    width: 80%;
+}
+
+.ctn-how ol {
+    padding-left: 2rem;
+    margin: 1rem 0;
+}
+
+.ctn-how {
+    width: 70%;
+    padding: 3rem 2rem;
+}
+
+.ctn-how p {
+    margin-top: 1rem;
+}
+
+.section-critique {
+    width: 500px;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 40vh;
+    background-image: url("../img/28.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 170%;
+}
+
+.ctn-critique {
+    width: 60%;
+    text-align: center;
+}
+
+.ctn-critique p {
+    line-height: 2rem;
+    margin-top: 2rem;
+}
+
+.rate {
+    display: flex;
+}
+
+.rate img {
+    width: 55%;
+    position: relative;
+    top: -4rem;
+}
+
+/* ============= 
+    Footer Style
+===============*/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 4rem;
+    border-top: 1px solid grey;
+}
+
+footer h2 {
+    margin: 4rem auto;
+    font-size: rem;
+}
+
+footer div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+footer div p {
+    font-size: 1.2rem;
+    color: #27282A;
+}
+
+footer div img {
+    width: 18%;
+}
+
+footer div p a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+@media only screen and (min-width: 601px) {
+    .review-price {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .section-deliver {
+        width: 70%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .section-deliver img {
+        width: 50%;
+    }
+
+    .deliver-heading,
+    .deliver-sub-heading {
+        text-align: left;
+    }
+
+    .section-how {
+        width: 70%;
+        margin: 5rem auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .section-how img {
+        width: 40%;
+    }
+
+    .ctn-how {
+        width: 100%;
+        padding: 3rem 2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header h1 {
+        text-align: center;
+    }
+
+    .btn-started {
+        position: absolute;
+        top: 45%;
+        left: 35%;
+    }
+
+    .hamburger {
+        position: absolute;
+        top: 8em;
+        right: 5%;
+        margin-left: -2em;
+        margin-top: -45px;
+        width: 2em;
+        height: 45px;
+        z-index: 5;
+    }
+
+    .hamburger div {
+        position: relative;
+        width: 3em;
+        height: 7px;
+        border-radius: 3px;
+        background-color: black;
+        margin-top: 8px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(213, 207, 207);
+        top: -100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        transform: scale(0);
+    }
+
+    .nav-wrapper {
+        position: relative;
+        overflow: hidden;
+        overflow-y: auto;
+        height: 100%;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        margin-left: 25%;
+
+    }
+
+    .menu a {
+        position: relative;
+        text-decoration: none;
+        color: black;
+        font-size: 2em;
+        display: inline-block;
+        margin-top: 1.25em;
+        transition: color 0.2s ease-in-out;
+        letter-spacing: 1px;
+    }
+
+    .menu a:hover {
+        color: white;
+    }
+
+    #toggle:checked+.hamburger .top-bun {
+        transform: rotate(-45deg);
+        margin-top: 25px;
+    }
+
+    #toggle:checked+.hamburger .bottom-bun {
+        opacity: 0;
+        transform: rotate(45deg);
+    }
+
+    #toggle:checked+.hamburger .meat {
+        transform: rotate(45deg);
+        margin-top: -7px;
+    }
+
+    #toggle:checked+.hamburger+.nav {
+        top: 0;
+        transform: scale(1);
+    }
+}
